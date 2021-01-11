@@ -338,3 +338,5 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+/src/UrlShortener.API/url-shortener.db
+/src/UrlShortener.API/url-shortener-log.db
