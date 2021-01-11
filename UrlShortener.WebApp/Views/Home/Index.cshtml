@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h2 class="display-4">Url Shortener</h2>
+    <br />
+
+    <form class="form-inline">
+        <div class="input-group">
+            @* URLs over 2,000 characters will not work in the most popular web browsers. *@
+            <input type="url" name="url" id="url" class="form-control"
+                   placeholder="https://example.com"
+                   pattern="[Hh][Tt][Tt][Pp][Ss]?:\/\/.*"
+                   size="150"
+                   maxlength="2000"
+                   required>
+
+            <button class="btn btn-outline-primary">Shorten url</button>
+        </div>
+    </form>
+</div>
